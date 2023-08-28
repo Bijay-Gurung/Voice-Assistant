@@ -30,7 +30,7 @@ class AssistanceGUI:
         close_button.place(x=350, y=520)
 
     def start_option(self):
-        pass  # Add your code for voice assistant functionality here
+        pass  
 
     def close_window(self):
         self.root.destroy()
