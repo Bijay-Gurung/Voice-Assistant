@@ -14,13 +14,11 @@ class AssistanceGUI:
         self.engine = pyttsx3.init()
         self.listener = sr.Recognizer()
 
-        self.bg = ImageTk.PhotoImage(file="Images/background.jpg")
-        bg_label = Label(self.root, image=self.bg)
-        bg_label.place(x=0, y=0)
+        self.root.configure(bg="#fff")
 
         self.centre = ImageTk.PhotoImage(file="Images/Mic.png")
         centre_label = Label(self.root, image=self.centre)
-        centre_label.place(x=100, y=100, height=400, width=100)
+        centre_label.place(x=220, y=50, height=400, width=100)
 
         start_button = Button(self.root, text='Start', font=('Poppins', 14), command=self.run_command)
         start_button.place(x=150, y=520)
